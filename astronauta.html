@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vela Astronauta con Ramo - S&M Lumière</title>
+    <style>
+        :root {
+            --bg-color: #fcf9f5;
+            --card-bg: #ffffff;
+            --text-color: #4a3e3d;
+            --accent-color: #8c6d58;
+            --whatsapp-color: #25d366;
+            --star-color: #fbc02d;
+            --border-color: #eee0d7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            padding: 20px 15px;
+        }
+
+        .container {
+            max-width: 480px;
+            width: 100%;
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            padding: 25px 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        /* Branding */
+        .brand-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 8px;
+        }
+
+        .brand-subtitle {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        /* Imagen del Producto */
+        .product-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            object-fit: cover;
+        }
+
+        .image-disclaimer {
+            font-size: 0.75rem;
+            color: #888;
+            font-style: italic;
+            margin-top: 6px;
+        }
+
+        /* Info Producto */
+        .product-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+            margin-top: 20px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 4px;
+        }
+
+        .details-list {
+            list-style: none;
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 0.95rem;
+        }
+
+        .details-list li {
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .details-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .details-label {
+            font-weight: 600;
+        }
+
+        .care-text {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            background: var(--bg-color);
+            padding: 15px;
+            border-radius: 12px;
+            color: var(--text-color);
+        }
+
+        /* Botón WhatsApp */
+        .btn-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            background-color: var(--whatsapp-color);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .btn-whatsapp:active {
+            transform: scale(0.98);
+        }
+
+        /* Calificación */
+        .rating-section {
+            border-top: 1px solid var(--border-color);
+            margin-top: 25px;
+            padding-top: 20px;
+            text-align: center;
+            clear: both;
+        }
+
+        .rating-title {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            direction: rtl;
+            gap: 5px;
+        }
+
+        .stars input {
+            display: none;
+        }
+
+        .stars label {
+            font-size: 1.8rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .stars label:hover,
+        .stars label:hover ~ label,
+        .stars input:checked ~ label {
+            color: var(--star-color);
+        }
+
+        .rating-thanks {
+            display: none;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Encabezado con Marca/Logo -->
+    <div class="brand-header">
+        <img src="58426.jpg" alt="Logo S&M Lumière" class="logo">
+        <p class="brand-subtitle">Velas Hechas con Amor</p>
+    </div>
+
+    <!-- Fotografía del producto -->
+    <div class="product-image-container">
+        <img src="58500_2.jpg" alt="Vela Astronauta con Ramo" class="product-image">
+        <p class="image-disclaimer">Imagen ilustrativa de referencia</p>
+    </div>
+
+    <!-- Título -->
+    <h1 class="product-title">Vela Astronauta con Ramo</h1>
+
+    <!-- Características -->
+    <h3 class="section-subtitle">Ficha Técnica</h3>
+    <ul class="details-list">
+        <li><span class="details-label">Aroma:</span> <span>Andalucía</span></li>
+        <li><span class="details-label">Duración:</span> <span>4 a 6 horas</span></li>
+        <li><span class="details-label">Cera:</span> <span>100% Cera de Soya Artesanal</span></li>
+        <li><span class="details-label">Diseño:</span> <span>Modelado a mano</span></li>
+    </ul>
+
+    <!-- Consejos / Cuidados -->
+    <h3 class="section-subtitle">Cuidados de tu vela</h3>
+    <p class="care-text">
+        Disfruta de tu pieza artesanal recortando la mecha a unos 5 mm antes de cada encendido para asegurar una combustión limpia y prolongada. Evita corrientes de aire directas.
+    </p>
+
+    <!-- Botón de WhatsApp Seguro -->
+    <a href="https://api.whatsapp.com/send?phone=573189392063&text=%C2%A1Hola!%20Tengo%20una%20duda%20sobre%20los%20cuidados%20de%20mi%20Vela%20Astronauta." 
+       class="btn-whatsapp" target="_blank">
+        <svg width="18" height="18" fill="white" viewBox="0 0 24 24">
+            <path d="M12.031 2c-5.514 0-9.999 4.486-9.999 10 0 1.763.46 3.483 1.332 5.004L2 22l5.148-1.348C8.625 21.498 10.312 22 12.031 22c5.515 0 10-4.486 10-10s-4.485-10-10-10zm5.952 14.155c-.252.712-1.463 1.359-2.01 1.417-.502.054-1.144.083-3.327-.818-2.793-1.154-4.577-4.008-4.717-4.195-.14-.187-1.139-1.517-1.139-2.893 0-1.376.712-2.052.966-2.333.253-.28.557-.35.743-.35.187 0 .373.003.535.01.173.007.406-.066.634.48.239.574.815 1.988.887 2.133.072.146.12.316.024.505-.096.188-.144.305-.287.472-.144.167-.302.373-.431.502-.144.143-.294.3-.126.587.168.287.747 1.233 1.603 1.996 1.101.98 2.029 1.285 2.316 1.428.287.143.455.12.623-.072.168-.192.718-.838.911-1.125.192-.287.383-.239.646-.144.264.096 1.674.789 1.961.933.287.144.478.216.55.336.072.12.072.695-.18 1.407z"/>
+        </svg>
+        ¿Tienes dudas? Escríbenos
+    </a>
+
+    <!-- Sistema de Calificación Separado -->
+    <div class="rating-section">
+        <p class="rating-title">¿Qué te parece este diseño?</p>
+        <div class="stars">
+            <input type="radio" id="star5" name="rating" value="5" onclick="showThanks()"><label for="star5">★</label>
+            <input type="radio" id="star4" name="rating" value="4" onclick="showThanks()"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rating" value="3" onclick="showThanks()"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rating" value="2" onclick="showThanks()"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rating" value="1" onclick="showThanks()"><label for="star1">★</label>
+        </div>
+        <p id="thanks-msg" class="rating-thanks">¡Gracias por tu valoración! ✨</p>
+    </div>
+</div>
+
+<script>
+    function showThanks() {
+        document.getElementById('thanks-msg').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
